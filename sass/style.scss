@@ -1,0 +1,97 @@
+
+a{
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+#menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    background: url('../../img/bg-nav-1200x1000.jpg') no-repeat center bottom;
+    background-size: cover;
+    padding: 20px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+    .list-vertical{
+        a{
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+        }
+        *:nth-child(1) {
+            -webkit-transition-delay: 0s;
+            -moz-transition-delay: 0s;
+            -o-transition-delay: 0s;
+            transition-delay: 0s;
+        }
+        * {
+            opacity: 1;
+            -webkit-transform: translateX(0px);
+            -moz-transform: translateX(0px);
+            -ms-transform: translateX(0px);
+            -o-transform: translateX(0px);
+            transform: translateX(0px);
+        }
+        font-size: 36px;
+        line-height: 44px;
+        margin-bottom: 1.5rem;
+        display: block;
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+#searchPage{
+    -webkit-transition: all 250ms ease-in-out;
+    -moz-transition: all 250ms ease-in-out;
+    -o-transition: all 250ms ease-in-out;
+    transition: all 250ms ease-in-out;
+    display: none;
+    z-index:10;
+    background:#eee;
+    width:100%;
+    height:640px;
+    position: absolute;
+    text-align: center;
+    .icon-cross{
+        font-size: 32px;
+        padding-right: 20px;
+    }
+    .search-field{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 18px;
+        display: inline-block;
+        letter-spacing: .3em;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-top: 17%;
+        i{
+            color: #999;
+        }
+        input{
+            font-size: 18px;
+            color: #999;
+            border:none;
+            background: #eee;
+            outline: none;
+        }
+
+    }
+}
